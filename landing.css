@@ -34,7 +34,7 @@ body{
     color: white;
 }
 .containerTiposComida > div{
-    width:100%;
+    width:93px;
     background-position: left top;
     -webkit-transition: width 0.5s;
     transition: width 0.5s;
@@ -43,8 +43,8 @@ body{
     cursor:pointer;
     text-align: center;
     background: green;
-    -webkit-clip-path: polygon(100% 0%, 79% 53%, 100% 100%, 25% 100%, 0 50%, 25% 0%);
-    clip-path: polygon(100% 0%, 79% 53%, 100% 100%, 25% 100%, 0 50%, 25% 0%);
+   /* -webkit-clip-path: polygon(100% 0%, 79% 53%, 100% 100%, 25% 100%, 0 50%, 25% 0%);
+    clip-path: polygon(100% 0%, 79% 53%, 100% 100%, 25% 100%, 0 50%, 25% 0%);  */
 }
 .containerTiposComida > div:nth-child(1){
     top:0;
@@ -55,7 +55,7 @@ body{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002400', endColorstr='#b4ddb4',GradientType=1 );
 }
 .containerTiposComida > div:nth-child(2){
-    top:60px;
+    top:45px;
     background: rgb(89,32,0);
     background: -moz-linear-gradient(left, rgba(89,32,0,1) 0%, rgba(201,100,0,1) 16%, rgba(186,102,0,1) 33%, rgba(201,139,94,1) 65%, rgba(204,177,134,1) 82%, rgba(219,205,179,1) 99%);
     background: -webkit-linear-gradient(left, rgba(89,32,0,1) 0%,rgba(201,100,0,1) 16%,rgba(186,102,0,1) 33%,rgba(201,139,94,1) 65%,rgba(204,177,134,1) 82%,rgba(219,205,179,1) 99%);
@@ -63,7 +63,7 @@ body{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#592000', endColorstr='#dbcdb3',GradientType=1 );
 }
 .containerTiposComida > div:nth-child(3){
-    top:120px;
+    top:90px;
     background: rgb(68,0,60);
     background: -webkit-linear-gradient(left, rgba(68,0,60,1) 0%, rgba(66,0,86,1) 17%, rgba(128,0,188,1) 34%, rgba(135,95,204,1) 66%, rgba(201,138,209,1) 82%, rgba(212,179,219,1) 100%);
     background: -o-linear-gradient(left, rgba(68,0,60,1) 0%, rgba(66,0,86,1) 17%, rgba(128,0,188,1) 34%, rgba(135,95,204,1) 66%, rgba(201,138,209,1) 82%, rgba(212,179,219,1) 100%);
@@ -72,26 +72,28 @@ body{
 }
 
 .containerTiposComida > div:hover{
-    width:120%;
+    width:80%;
 }
 
 .containerTiposComida > div > div{
-    padding: 10px 0;
+    padding: 12px 0;
+    font-size: 12px;
+    text-shadow: 2px 2px 8px #000000;
 }
 
 
 .containerComida  .bloqueComida{
-    width:35%;
+    width:40%;
     height:95%;
     background:rgba(95, 95, 95, 0.56);
-    margin-left: 32%;
+    margin-left: 30%;
     border-radius:5px;
 }
 .tituloComida{
     padding:5px;
     text-align:center;
     color:white;
-    font-size:22px;
+    font-size:18px;
     background: rgba(51, 51, 51, 0.7);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -100,8 +102,8 @@ body{
     padding:5px;
     text-align:center;
     color:white;
-    font-size:18px;
-    background: rgba(95, 95, 95, 0.7);
+    font-size:15px;
+    background: rgba(51, 51, 51, 0.7);
 }
 .comida{
     display:table;
@@ -113,11 +115,10 @@ body{
     color:white;
 }
 .comida > div:nth-child(1){
-    width:5%;
+    width:70px;
 }
-.comida > div:nth-child(2){
-    width:20%;
-    text-align:center;
+.descripcion{
+    font-size: 13px;
 }
 
 .containerLunchBox{
@@ -139,9 +140,7 @@ body{
 /****** SEMAFORO ****/
 
 .led-box {
-  height: 15px;
-  width: 25%;
-  margin: 5px auto;
+  margin: 3px auto;
 }
 
 .led-box p {
@@ -149,45 +148,38 @@ body{
   text-align: center;
   margin: 1em;
 }
-
+.led-color{
+    margin: 0 auto;
+    width: 44px;
+    padding: 2px 0;
+    color: black;
+    text-align: center;
+    font-size: 9px;
+}
 .led-red {
-  margin: 0 auto;
-  width: 15px;
-  height: 15px;
-  background-color: #F00;
-  border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;
-  -webkit-animation: blinkRed 0.5s infinite;
-  -moz-animation: blinkRed 0.5s infinite;
-  -ms-animation: blinkRed 0.5s infinite;
-  -o-animation: blinkRed 0.5s infinite;
-  animation: blinkRed 0.5s infinite;
+  -webkit-animation: blinkRed 1.5s infinite;
+  -moz-animation: blinkRed 1.5s infinite;
+  -ms-animation: blinkRed 1.5s infinite;
+  -o-animation: blinkRed 1.5s infinite;
+  animation: blinkRed 1.5s infinite;
 }
 .led-yellow {
-  margin: 0 auto;
-  width: 15px;
-  height: 15px;
-  background-color: #FF0;
-  border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, rgba(255, 255, 0, 0.5) 0 2px 12px;
-  -webkit-animation: blinkYellow 0.5s infinite;
-  -moz-animation: blinkYellow 0.5s infinite;
-  -ms-animation: blinkYellow 0.5s infinite;
-  -o-animation: blinkYellow 0.5s infinite;
-  animation: blinkYellow 0.5s infinite;
+  -webkit-animation: blinkYellow 3s infinite;
+  -moz-animation: blinkYellow 3s infinite;
+  -ms-animation: blinkYellow 3s infinite;
+  -o-animation: blinkYellow 3s infinite;
+  animation: blinkYellow 3s infinite;
 }
 .led-green {
-  margin: 0 auto;
-  width: 15px;
-  height: 15px;
-  background-color: #07ff00;
-  border-radius: 50%;
+    background-color: #07ff00;
   box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #053101 0 -1px 9px, rgba(16, 255, 0, 0.5) 0 2px 12px;
-  -webkit-animation: blinkGreen 0.5s infinite;
+  /*-webkit-animation: blinkGreen 0.5s infinite;
   -moz-animation: blinkGreen 0.5s infinite;
   -ms-animation: blinkGreen 0.5s infinite;
   -o-animation: blinkGreen 0.5s infinite;
-  animation: blinkGreen 0.5s infinite;
+  animation: blinkGreen 0.5s infinite;  */
 }
 
 
@@ -269,4 +261,84 @@ body{
     50% { background-color: #079a02; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #0c8002 0 -1px 9px, rgba(16, 255, 0, 0.5) 0 1px 0;}
     to { background-color: #07ff00; }
 }
+
+
+
+
+/****** RIBBON *********/
+
+/* common */
+.ribbon {
+  width: 95px;
+  height: 95px;
+  overflow: hidden;
+  position: absolute;
+}
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+}
+.ribbon.ribbon-desayuno::before,
+.ribbon.ribbon-desayuno::after {
+    border: 5px solid #045d04;
+}
+.ribbon.ribbon-comida::before,
+.ribbon.ribbon-comida::after {
+    border: 5px solid #90550f;
+}
+.ribbon.ribbon-cena::before,
+.ribbon.ribbon-cena::after {
+    border: 5px solid #863ca9;
+}
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 135px;
+  padding: 7px 0;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #fff;
+  font: 700 13px/1 'Lato', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+.ribbon.ribbon-desayuno span{
+    background-color: rgba(0,138,0,1);
+}
+.ribbon.ribbon-comida span{
+    background-color: rgb(206, 123, 23);
+}
+.ribbon.ribbon-cena span{
+    background-color: rgb(159, 77, 197);
+}
+
+/* top right*/
+.ribbon-top-right {
+  top: -10px;
+  right: -10px;
+}
+.ribbon-top-right::before,
+.ribbon-top-right::after {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+.ribbon-top-right::before {
+  top: 0;
+  left: 0;
+}
+.ribbon-top-right::after {
+  bottom: 0;
+  right: 0;
+}
+.ribbon-top-right span {
+  left: -10px;
+  top: 25px;
+  transform: rotate(45deg);
+}
+
+
+
 
